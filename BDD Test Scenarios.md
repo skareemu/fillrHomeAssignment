@@ -18,30 +18,30 @@ Scenario: New Customer log in
 	
     Given a new customer navigates to Create Account page
     When the customer enter the following invalid details
-			|	username		| password		|
-			| min-1@domain		| min value		|
-			| max+1@domain		| min value		|
+			|	username	| password	|
+			| min-1@domain		| min value	|
+			| max+1@domain		| min value	|
 			| min@domain		| min-1 value	|
 			| min@domain		| max+1 value	|
 			| min-1@domain		| max+1 value	|
 			| max+1@domain		| max+1 value	|
 			| min-1@domain		| min-1 value	|
 			| max+1@domain		| min-1 value	|
-			| max@				| min value		|
-			| min				| max value		|
-			| 					| max value		|
-			| min@domain		| 				|
-			| 					| 				|
-			| max#$%^&@domain	| min value		|
+			| max@			| min value	|
+			| min			| max value	|
+			| 			| max value	|
+			| min@domain		| 		|
+			| 			| 		|
+			| max#$%^&@domain	| min value	|
 	And click on "Create Account" button
     Then the customer gets error message
 	
 	Given a new customer navigates to Create Account page
     When the customer enter the following valid details
-			|	username	| password		|
-			| min@domain	| min value		|
+			|username	| password	|
+			| min@domain	| min value	|
 			| min+1@domain	| min+1 value	|
-			| max@domain	| max value		|
+			| max@domain	| max value	|
 			| Max-1@domain	| max-1 value	|
 	And click on "Create Account" button
     Then the customer is presented with home page
@@ -69,30 +69,30 @@ Scenario: Existing Customer log in
 
     Given an existing customer navigates to Sign in page
     When the customer enter the following invalid details
-			|	username		| password		|
-			| min-1@domain		| min value		|
-			| max+1@domain		| min value		|
+			|	username	| password	|
+			| min-1@domain		| min value	|
+			| max+1@domain		| min value	|
 			| min@domain		| min-1 value	|
 			| min@domain		| max+1 value	|
 			| min-1@domain		| max+1 value	|
 			| max+1@domain		| max+1 value	|
 			| min-1@domain		| min-1 value	|
 			| max+1@domain		| min-1 value	|
-			| max@				| min value		|
-			| min				| max value		|
-			| 					| max value		|
-			| min@domain		| 				|
-			| 					| 				|
-			| max#$%^&@domain	| min value		|
+			| max@			| min value	|
+			| min			| max value	|
+			| 			| max value	|
+			| min@domain		| 		|
+			| 			| 		|
+			| max#$%^&@domain	| min value	|
 	And click on "Sign in" button
     Then the customer gets error message
 	
 	Given a new customer navigates to Sign in page
     When the customer enter the following valid details
-			|	username	| password		|
-			| min@domain	| min value		|
+			|username	| password	|
+			| min@domain	| min value	|
 			| min+1@domain	| min+1 value	|
-			| max@domain	| max value		|
+			| max@domain	| max value	|
 			| Max-1@domain	| max-1 value	|
 	And click on "Sign in" button
     Then the customer is presented with home page
