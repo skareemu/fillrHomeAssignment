@@ -57,16 +57,16 @@ Build: app-staging-build-1.2.3
 ## 5. Test Approach/Process  
 <img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Testing%20Pyramid.png" width="500">
 * Level 1 Tests – Automated Unit Tests  
-* Level 2 Tests – Automated API Tests  
-* Level 3 Tests  
-       •	Functional tests – Both Manual & Automated  
-       •	Regression tests – Automated    
-       •	Exploratory tests – Manual  
-## 6. Risk and Dependencies
-* API Readiness
-* Test Environment set up
-## 7. Test Deliverables
-* Test Case Design Mindmap
+* Level 2 Tests – Automated API Tests    
+* Level 3 Tests    
+       •	Functional tests – Both Manual & Automated    
+       •	Regression tests – Automated      
+       •	Exploratory tests – Manual    
+## 6. Risk and Dependencies  
+* API Readiness  
+* Test Environment set up  
+## 7. Test Deliverables  
+* Test Case Design Mindmap   
 * Test Plan
 * Test Cases
 * Defect tracking
