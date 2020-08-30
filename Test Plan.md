@@ -15,7 +15,7 @@ As a comeback user
  I want to ask for forgot user credentials   
 So that I can log into the website  
 ### 2.1 Test Scenarios
-#### Functional Tests
+#### 2.1.1 Functional Tests
 * Verify 'Your email' field with BVA & ECP testing techniques
 * Verify 'Your password' field with BVA & ECP testing techniques
 * Verify masking/unmasking password link
@@ -25,3 +25,22 @@ So that I can log into the website
         * Account locked when user attempted more than 3 times with wrong email/password
 * Verify create account creates an account and logs in user
 * Verify comeback user get email and able to log in
+#### 2.1.2 Non-Functional Tests(_Usability,Compatibility,Performance,Security etc)
+* Cross browser testing ( Chrome, Firefox, Safari, IE )
+* Web responsive testing ( iOS devices, Android devices & native, chrome, safari, firefox browsers)
+* UX testing based out of inVision app or Ux design screens(static text, logo, font & font sizes etc)
+* Accessibility testing
+* Basic performance testing(checking response times, trafic, caching etc)
+* Basic security testing
+#### 2.1.3 API Tests
+* Verify log in end point generates authToken and gives 200 OK response code when valid payload is given
+   Endpoint: https://xxxxxxxx/account/login
+   Swagger URL : http://xxxxxx/swagger/index.html 
+
+   Valid Payload : 
+    {
+     "Password" : "Passxxxx",
+     "Mode" : 0,
+     "Identifier" : "xxxxxxxxx"
+    }
+* Verify log in end point for other response codes as per swagger documentation
