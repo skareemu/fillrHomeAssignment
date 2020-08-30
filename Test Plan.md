@@ -7,13 +7,15 @@ Login functionality of the REA website
 ## 2. User stories
 As an existing user   
  I want to enter user credentials  
-So that I can log into the website  
+So that I can log into the website   
+
 As a new user  
  I want to create user credentials  
 So that I can log into the website    
+
 As a comeback user  
  I want to ask for forgot user credentials   
-So that I can log into the website  
+So that I can log into the website    
 ### 2.1 Test Scenarios
 #### 2.1.1 Functional Tests
 * Verify 'Your email' field with BVA & ECP testing techniques
@@ -73,8 +75,4 @@ Build: app-staging-build-1.2.3
 * Updated Regression test Pack
 * Updated Smoke test Pack
  
-
-
-
-
 
