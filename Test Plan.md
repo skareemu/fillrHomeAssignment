@@ -55,7 +55,7 @@ Build: app-staging-build-1.2.3
 * Level 2 Tests – API Tests in Dev or CI environment
 * Level 3 Tests – Functional/Regression/Exploratory Testing in SIT/Test environment
 ## 5. Test Approach/Process  
-<img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Testing%20Pyramid.png" width="500">
+<img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Testing%20Pyramid.png" width="500">  
 * Level 1 Tests – Automated Unit Tests  
 * Level 2 Tests – Automated API Tests    
 * Level 3 Tests    
@@ -75,4 +75,5 @@ Build: app-staging-build-1.2.3
 * Updated Regression test Pack
 * Updated Smoke test Pack
  
+
 
