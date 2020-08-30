@@ -55,11 +55,12 @@ Build: app-staging-build-1.2.3
 ## 5. Test Approach/Process  
 * Level 1 Tests – Automated Unit Tests
 * Level 2 Tests – Automated API Tests
-* Level 3 Tests
+* Level 3 Tests  
        •	Functional tests – Both Manual & Automated  
        •	Regression tests – Automated  
        •	Exploratory tests – Manual  
-       
+<img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Testing%20Pyramid.png" width="800"> 
+
 
 
 
