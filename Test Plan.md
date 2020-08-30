@@ -43,8 +43,8 @@ So that I can log into the website
      "Identifier" : "xxxxxxxxx"  
     }
 * Verify log in end point for other response codes as per swagger documentation
-## Test Scope
-Ticket name: Jira ticket 786.
-Summary: Login Functionality
-Build: app-staging-build-1.2.3.
-<img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Login_TC_Mindmapping.png" width="800"> 
+## Test Scope  
+Ticket name: Jira ticket 786  
+Summary: Login Functionality  
+Build: app-staging-build-1.2.3  
+<img src="https://github.com/skareemu/fillrHomeAssignment/blob/master/Login_TC_Mindmapping.png" width="1000"> 
