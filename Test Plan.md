@@ -34,13 +34,12 @@ So that I can log into the website
 * Basic security testing
 #### 2.1.3 API Tests
 * Verify log in end point generates authToken and gives 200 OK response code when valid payload is given
-   Endpoint: https://xxxxxxxx/account/login
-   Swagger URL : http://xxxxxx/swagger/index.html 
-
-   Valid Payload : 
-    {
-     "Password" : "Passxxxx",
-     "Mode" : 0,
-     "Identifier" : "xxxxxxxxx"
+   Endpoint: https://xxxxxxxx/account/login  
+   Swagger URL: http://xxxxxx/swagger/index.html   
+   Valid Payload:  
+    {  
+     "Password" : "Passxxxx",  
+     "Mode" : 0,  
+     "Identifier" : "xxxxxxxxx"  
     }
 * Verify log in end point for other response codes as per swagger documentation
