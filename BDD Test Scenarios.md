@@ -103,3 +103,55 @@ Scenario: Existing Customer log in
 	And click on "Sign in" button
     Then the customer is presented with 'Account locked' error message
    -------------------
+Scenario: Comeback Customer log in
+
+	Given an existing customer(comeback) navigates to Sign in page
+	When the customer clicks on 'Forgot your password?' link
+	Then the customer is presented with Forgot password screen
+	And the customer see the 'Go back to Sign in' link
+	And upon click on it takes the user to sign page
+
+	Given an existing customer(comeback) is in Forgot password screen  
+	When the customer enter following invalid email address  
+            		|  Email adress		|  
+			| min-1@domain		|  
+			| max+1@domain		|  
+			| min@domain		|  
+			| min@domain		|  
+			| min-1@domain		|  
+			| max+1@domain		|  
+			| min-1@domain		|  
+			| max+1@domain		|  
+			| max@			|  
+			| min			|  
+			| 			|
+			| min@domain		|  
+			|                   	|  
+			| max#$%^&@domain	|   
+	and click on 'Reset my password' button  
+	Then the customer is presented with Error message  
+
+	Given an existing customer(comeback) is in Forgot password screen
+	When the customer enter following invalid email address   
+			|	Email adress    |   
+			| min@domain		|   
+			| max@domain		|   
+			| min+1@domain		|   
+			| max-1@domain		|   
+	And click on 'Reset my password' button     
+	Then the customer is presented with 'Update your password'      
+	And email is sent to the customer's email address
+
+	Given an existing(comeback) customer is in 'Update your password'   
+	And the customer is ready with the password code(from email)    
+	When the customer enters invalid/expired code, new password and confirm password    
+	And click on 'Change password'      
+	Then the customer is presented with the error message   
+
+	Given an existing(comeback) customer is in 'Update your password'   
+	And the customer is ready with the password code(from email)    
+	When the customer enters valid code, new password and confirm password  
+	And click on 'Change password'  
+	Then the customer is presented with the sign in page    
+	And upon entering valid email address and new password  
+	And click on 'Sign in' button takes the customer to home page   
