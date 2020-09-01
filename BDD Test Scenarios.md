@@ -102,6 +102,12 @@ Scenario: Existing Customer log in
 	And enter wrong password 3 times
 	And click on "Sign in" button
     Then the customer is presented with 'Account locked' error message
+    
+    Given a new customer navigates to Sign in page
+    When the customer enter the valid username
+	And enter password
+	And click on "show" link
+    Then the customer is able to see the typed in password
    -------------------
 Scenario: Comeback Customer log in
 
@@ -154,4 +160,28 @@ Scenario: Comeback Customer log in
 	And click on 'Change password'  
 	Then the customer is presented with the sign in page    
 	And upon entering valid email address and new password  
-	And click on 'Sign in' button takes the customer to home page   
+	And click on 'Sign in' button takes the customer to home page  
+	
+-------------------
+Scenario: Non-Functional scenarios
+
+	Given an existing/new/comeback customer is in sign in/forgot password/create account page
+	When the customer examine for all the static text, logo, font and font sizes
+	Then the customer will see all of them are aligned properly with UX
+	
+	Given an existing/new/comeback opens the sign in page with the following browsers
+			|	Browsers  	|   
+			|      Chrome		|   
+			|      Firefox		|   
+			|      Safari		|   
+	When the customer navigates through sign in/forgot password/create account pages
+	Then the customer will see the same functionality across all browsers
+	
+	Given an existing/new/comeback opens the sign in page with the following mobile browsers
+			|	Browsers  	|   Device		|
+			|      Chrome		|   ios, android	|
+			|      Firefox		|   ios, android	|  
+			|      Safari		|   ios			| 
+			|      Native		|   android		|
+	When the customer navigates through sign in/forgot password/create account pages
+	Then the customer will see the same functionality across all browsers
