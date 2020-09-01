@@ -10,7 +10,7 @@ ECP:- Valid = [(a-z) (A-Z) (0-9)]+	& Invalid = Special chars, Blank Space, Blank
 BVA:- Min chars = 4 & Max value = 6 characters
 ECP:- Valid = [(a-z) (A-Z) (0-9)]+	& Invalid = Special chars, Blank Space, Blank Field  
  
-Scenario: New Customer log in
+**Scenario: New Customer log in**
 
 	Given a new customer navigates to Signin page
 	When the customer click on "Create Account" link
@@ -65,7 +65,7 @@ Scenario: New Customer log in
 	Then customer is presented with home page
 	
 -------------------	
-Scenario: Existing Customer log in
+**Scenario: Existing Customer log in**
 
     Given an existing customer navigates to Sign in page
     When the customer enter the following invalid details
@@ -109,7 +109,7 @@ Scenario: Existing Customer log in
 	And click on "show" link
     Then the customer is able to see the typed in password
    -------------------
-Scenario: Comeback Customer log in
+**Scenario: Comeback Customer log in**
 
 	Given an existing customer(comeback) navigates to Sign in page
 	When the customer clicks on 'Forgot your password?' link
@@ -163,7 +163,7 @@ Scenario: Comeback Customer log in
 	And click on 'Sign in' button takes the customer to home page  
 	
 -------------------
-Scenario: Non-Functional scenarios
+**Scenario: Non-Functional scenarios**
 
 	Given an existing/new/comeback customer is in sign in/forgot password/create account page
 	When the customer examine for all the static text, logo, font and font sizes
